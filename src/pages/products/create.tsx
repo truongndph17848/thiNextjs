@@ -10,6 +10,10 @@ type ProductsProps = {
     products: any[];
   }
 
+  type inputValuves = {
+    name: "string"
+  }
+
 const creatProducts = ({products}: ProductsProps) => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -17,7 +21,7 @@ const creatProducts = ({products}: ProductsProps) => {
     if (error) return <div>failed to load</div>;
     // if (!data) return <div>loading...</div>;
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
 
     const onhandleSubmit = (data: any) =>{
