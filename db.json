@@ -11,6 +11,10 @@
     {
       "name": "product A",
       "id": 3
+    },
+    {
+      "name": "product A",
+      "id": 4
     }
   ],
   "users": []
